@@ -24,7 +24,7 @@ const PageSeven = () => {
                     </ol>
 
                     <div className="pSeven_btn_wrapper">
-                            <button className="btn_seven">Оставить заявку</button>
+                        <button className="btn_seven">Оставить заявку</button>
                     </div>
                 </div>
             </div>

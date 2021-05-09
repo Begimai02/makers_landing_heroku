@@ -17,11 +17,16 @@
     background-color: #453F86;
     color: #fff;
     cursor: pointer;
+    outline: none;
 }
 
 .btn:active {
     transform: translate(0px, 4px);
-  }
+    outline: none;
+}
+.btn:focus {
+    outline: none;
+}
 
 
 @media all and (max-width: 910px){

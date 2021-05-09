@@ -1,8 +1,3 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
 .pSix_outer{
   padding: 20px 0;
@@ -164,15 +159,7 @@
     }
   }
   
-  @media all and (max-width: 540px){
-    .hero_text{
-        margin-bottom: 60px;
-    }
-    /* .pSix_outer{
-      height: 1350px;
-    } */
-   
-  }
+
   
   @media all and (max-width: 480px){
     /* .pSix_outer{
