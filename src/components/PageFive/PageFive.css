@@ -1,8 +1,3 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
 .pFive_outer{
   padding: 50px 0;

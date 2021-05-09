@@ -1,9 +1,3 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 
 .pFour_outer{
     height: 1050px;
@@ -194,10 +188,16 @@
     background-color: #fff;
     color: #453F86;
     cursor: pointer;
+    outline: none;
 }
 
 .btn_four:active {
     transform: translate(0px, 4px);
+    outline: none;
+}
+
+.btn_four:focus {
+    outline: none;
 }
 
 
@@ -245,16 +245,6 @@
     .pFour_outer{
         height: 1600px;
     }
-
-    .hero_container{
-        height: auto;
-    }
-    .hero_content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-    }
     .pFour_title{
         text-align: center;
     }
@@ -266,25 +256,9 @@
     .pFour_title{
         font-size: 2.5em
     }
-    .hero_container{
-        margin-top: -80px;
-    }
  
 }
-@media all and (max-width: 800px){
-    .hero_img{
-        padding-top: 30px;
-        max-width: 400px;
-        height: 400px;
-    }
-    .hero_img>img{
-        width: 100%;
-        height: 100%;
-    }
 
-   
-
-}
 
 @media all and (max-width: 675px){
     .pFour_outer{
@@ -293,9 +267,6 @@
 }
 
 @media all and (max-width: 660px){
-    .hero_text{
-        margin-bottom: 120px;
-    }
     .pFour_outer{
         height: 2500px;
     }
@@ -305,24 +276,12 @@
     .pFour_title{
         font-size: 2em
     }
-    .hero_text{
-        font-size: 1em
-    }
-    .hero_text{
-        margin-bottom: 100px;
-    }
     .pFour_outer{
         height: 2300px;
     }
   
 }
 
-@media all and (max-width: 540px){
-    .hero_text{
-        margin-bottom: 60px;
-    }
-   
-}
 @media all and (max-width: 375px){
     .pFour_title{
         font-size: 1.6em

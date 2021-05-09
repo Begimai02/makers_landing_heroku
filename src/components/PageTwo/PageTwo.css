@@ -157,12 +157,6 @@
     }
 }
 
-@media all and (max-width: 540px){
-    .hero_text{
-        margin-bottom: 60px;
-    }
-   
-}
 @media all and (max-width: 375px){
     .pTwo_title{
         font-size: 1.6em

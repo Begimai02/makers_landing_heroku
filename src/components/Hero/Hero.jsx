@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css'
-import Button from '../Button/Button';
 import hero2 from '../../assets/main3.jpg';
 
 const Hero = () => {
@@ -18,7 +17,9 @@ const Hero = () => {
                 </div>
                 
             </div>
-                <Button className="hero_btn" />
+            <div className="hero_btn_wrapper">
+                    <button className="btn_hero">Оставить заявку</button>
+            </div>
         </div>
     );
 };
