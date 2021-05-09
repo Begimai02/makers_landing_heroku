@@ -69,9 +69,9 @@
     font-size: 1.2rem;
     height: 5rem;
     border-radius: 3.3rem;
-    background-color: #fff;
+    background-color: #453F86;
     border: none;
-    color: #453F86;
+    color: #fff;
     transition: .3s ease-in-out;
     box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
     -webkit-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
@@ -79,8 +79,8 @@
 }
 
 .btn_hero:hover{
-    background-color: #453F86;
-    color: #fff;
+    background-color: #fff;
+    color: #453F86;;
     cursor: pointer;
     outline: none;
 }
