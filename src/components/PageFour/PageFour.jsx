@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PageFour.css';
 import Grid from '@material-ui/core/Grid';
 import html from '../../assets/stack/html.png';
@@ -8,8 +8,18 @@ import react from '../../assets/stack/react.png';
 import node from '../../assets/stack/node3.png';
 import git from '../../assets/stack/git2.png';
 import data from '../../assets/stack/data2.png';
+import ModalPage from '../Modal/Modal';
 
 const PageFour = () => {
+    const [open, setOpen] = useState(false); //for modal inputs
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
+    
     const stack = [
         {title: "Html/Css Bootstrap", logo: html, class: "card html", mainClass: "cirlce_inner"},
         {title: "JavaScript", logo: javascript, class: "card js", mainClass: "cirlce_inner"},
@@ -43,8 +53,9 @@ const PageFour = () => {
                             </Grid>
                         </div>
                         <div className="pFour_btn_wrapper">
-                            <button className="btn_four">Оставить заявку</button>
+                            <button onClick={handleOpen} className="btn_four">Оставить заявку</button>
                         </div>
+                        <ModalPage handleClose={handleClose} open={open} />
                     </div>
                 </div>
              </div>

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css'
 import hero2 from '../../assets/main3.jpg';
+import ModalPage from '../Modal/Modal';
 
 const Hero = () => {
+    const [open, setOpen] = useState(false); //for modal inputs
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
     return (
         <div className='hero_container'>
             <div className='hero_content'>
@@ -18,8 +27,9 @@ const Hero = () => {
                 
             </div>
             <div className="hero_btn_wrapper">
-                    <button className="btn_hero">Оставить заявку</button>
+                    <button onClick={handleOpen} className="btn_hero">Оставить заявку</button>
             </div>
+            <ModalPage handleClose={handleClose} open={open} />
         </div>
     );
 };

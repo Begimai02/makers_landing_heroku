@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ModalPage from '../Modal/Modal';
 import './PageSeven.css';
 
 const PageSeven = () => {
+    const [open, setOpen] = useState(false); //for modal inputs
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
+    
     const sevenCareer = [
         {title: "Регистрация на курс", desc: "Онлайн, занимате около 4 минут."},
         {title: "Прохождение вступительного теста", desc: "Займет около 20 минут, общие вопросы, скорость печати. Ответы вы узнаете в течение 2 дней."},
@@ -24,8 +34,9 @@ const PageSeven = () => {
                     </ol>
 
                     <div className="pSeven_btn_wrapper">
-                        <button className="btn_seven">Оставить заявку</button>
+                        <button onClick={handleOpen} className="btn_seven">Оставить заявку</button>
                     </div>
+                    <ModalPage handleClose={handleClose} open={open} />
                 </div>
             </div>
         </div>

@@ -101,6 +101,7 @@
 
 .btn_nine:active {
     transform: translate(0px, 4px);
+    background-color: rgb(182, 182, 182);
     outline: none;
 }
 
