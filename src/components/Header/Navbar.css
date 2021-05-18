@@ -54,7 +54,7 @@
 	content: "";
 	width: 0%;
 	height: 2px;
-	background-color: #453F86;
+	/* background-color: #453F86; */
 	left: 50%;
 	bottom: -10px;
 	transition: all 0.3s ease-in-out;
@@ -119,7 +119,6 @@
     }
     
     .nav-link:hover {
-        background-color: #fff;
         color: #242424;
         border-radius: 0;
     }
