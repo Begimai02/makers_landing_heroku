@@ -1,0 +1,248 @@
+
+.pSeven_outer{
+  padding: 50px 0;
+  height: 1150px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pSeven_container{
+    max-width: 1348px;
+    margin: auto;
+    /* margin-top: 200px; */
+}
+
+.pSeven_content{
+    width: 70%;
+    height: 150px;
+    color: #48455A;
+    margin: auto;
+    /* margin-top: 200px; */
+    text-align: center;
+}
+
+.pSeven_title{
+    font-size: 3em;
+    color: #48455A;
+    margin: 0 0 40px -19px;
+    margin-bottom: 100px;
+
+}
+
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #9a42ed;
+    --highlight2: #063bad;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.pSeven_list {
+    list-style: none;
+    width: 600px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+.pSeven_list-item {
+    text-align: start;
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+.pSeven_list-item:before {
+    font: bold 2.25rem/1 var(--font-number);
+    content: counter(list);
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+
+.pSeven_list-item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+.pSeven_btn_wrapper{
+    margin-top: 50px;
+}
+
+.btn_seven{
+    font-family: 'Montserrat', sans-serif;
+    width: 22rem;
+    font-size: 1.2rem;
+    height: 5rem;
+    border-radius: 3.3rem;
+    background-color: #453F86;
+    border: none;
+    color: #fff;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+}
+
+
+.btn_seven:hover{
+    background-color: #fff;
+    color: #453F86;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn_seven:active {
+    transform: translate(0px, 4px);
+    outline: none;
+}
+
+.btn_seven:focus {
+    outline: none;
+}
+
+@media all and (max-width: 910px){
+    .btn_seven{
+        width: 19rem;
+        height: 4.4rem;
+        font-size: 1.2rem;
+    }
+}
+@media all and (max-width: 590px){
+    .btn_seven{
+        width: 15rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 400px){
+    .btn_seven{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 1055px){
+    .pSeven_title{
+        text-align: center;
+    }
+    .pTwo_container{
+        margin-top: 150px;
+    }
+}
+
+
+@media all and (max-width: 910px){
+    .pSeven_outer{
+        height: 1300px;
+    }
+    .pSeven_title{
+        font-size: 2.5em
+    }
+}
+
+@media all and (max-width: 600px){
+    .pSeven_outer{
+        height: 1300px;
+    }
+}
+
+
+@media all and (max-width: 590px){
+    .pSeven_title{
+        font-size: 2em
+    }
+    .pSeven_outer{
+        height: 1200px;
+    }
+    .pSeven_list-item{
+        font-size: 0.9rem;
+    }
+}
+
+@media all and (max-width: 540px){
+    .pSeven_outer{
+        height: 1350px;
+    }
+
+    .pSeven_list-item:before{
+        float: none;
+        margin-left: 7%;
+    }
+    .pSeven_list-item{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px){ 
+    /* .pSeven_outer{
+        height: 1370px;
+    } */
+    .list{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 415px){
+    .pSeven_outer{
+        height: 1450px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .pSeven_title{
+        font-size: 1.6em
+    }
+    .pTwo_content{
+        height: auto;
+    }
+    .pSeven_outer{
+        height: 1550px;
+    }
+    .list{
+        font-size: 12px;
+    }
+
+}
+
+
+@media all and (max-width: 310px){
+    .pSeven_title{
+        font-size: 1.3em
+    }
+    .pSeven_outer{
+        height: 1330px;
+    }
+    .pSeven_list-item{
+        font-size: 0.8rem;
+    }
+}
+
+  

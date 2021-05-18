@@ -1,0 +1,121 @@
+
+.modal_form{
+    position: relative;
+}
+.modal_exit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.modal_exit:active{
+    transform: translate(0px, 2px);
+    transition: .3s ease-in-out;
+    color: rgb(240, 240, 240)
+}
+
+.modal_form_first{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal_form_one, .modal_form_two, .modal_form_three{
+    height: 50px;
+    width: 480px;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    border: 1px solid rgb(155, 153, 153);
+    color: #453F86;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+}
+
+
+
+
+.modal_btn_wrapper{
+    margin-top: 50px;
+}
+
+.btn_modal{
+    font-family: 'Montserrat', sans-serif;
+    width: 18rem;
+    font-size: 1rem;
+    height: 3.4rem;
+    border-radius: 3.3rem;
+    background-color: #453F86;
+    border: none;
+    color: #fff;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+}
+
+
+.btn_modal:hover{
+    background-color: #fff;
+    color: #453F86;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn_modal:active {
+    transform: translate(0px, 4px);
+    outline: none;
+}
+
+.btn_modal:focus {
+    outline: none;
+}
+
+
+@media all and (max-width: 590px){
+    .btn_modal{
+        width: 15rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 530px){
+    .modal_form_one, .modal_form_two, .modal_form_three{
+        height: 50px;
+        width: 380px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .btn_modal{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .modal_form_one, .modal_form_two, .modal_form_three{
+        height: 50px;
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 330px){
+    .modal_form_one, .modal_form_two, .modal_form_three{
+        height: 50px;
+        width: 260px;
+    }
+    .modal_exit{
+        position: absolute;
+        top: 7px;
+        right: 30px;
+        cursor: pointer;
+    }
+}
