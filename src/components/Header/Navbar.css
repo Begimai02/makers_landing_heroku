@@ -47,6 +47,8 @@
     position: relative;
     text-decoration: none;
     color: #48455A;
+    text-decoration: underline transparent;
+    transition:  0.2s
 }
 
 .link::after {
@@ -59,11 +61,15 @@
 	bottom: -10px;
 	transition: all 0.3s ease-in-out;
 }
+.link:hover{
+    text-decoration: underline #8478f3
+}
 
 .nav-link:hover .link::after {
     cursor: pointer;
 	width: 100%;
 	left: 0;
+
 }
 
 .nav-icon{

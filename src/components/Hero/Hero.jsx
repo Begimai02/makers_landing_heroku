@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Hero.css'
 import hero2 from '../../assets/main3.jpg';
 import ModalPage from '../Modal/Modal';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const [open, setOpen] = useState(false); //for modal inputs
@@ -26,8 +27,12 @@ const Hero = () => {
                 </div>
                 
             </div>
+
             <div className="hero_btn_wrapper">
                     <button onClick={handleOpen} className="btn_hero">Оставить заявку</button>
+                    <Link to="/pay" style={{textDecoration: 'none'}}>
+                        <button  className="btn_hero btn_pay">Записаться</button>
+                    </Link>
             </div>
             <ModalPage handleClose={handleClose} open={open} />
         </div>
