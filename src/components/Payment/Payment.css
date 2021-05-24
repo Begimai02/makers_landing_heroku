@@ -1,0 +1,164 @@
+.pay_outer{
+    height: 80vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.pay_container{
+    max-width: 1348px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.pay_content{
+    width: 70%;
+    height: 150px;
+    color: rgb(247, 201, 108);
+    margin: auto;
+    /* margin-top: 200px; */
+    text-align: center;
+}
+
+.pay_title{
+    font-size: 3em;
+    color: #48455A;
+    margin: 0 0 40px -19px;
+
+}
+
+
+.pay_btn_wrapper{
+    margin-top: 50px;
+}
+
+.btn_pay_btn{
+    font-family: 'Montserrat', sans-serif;
+    width: 22rem;
+    font-size: 1.2rem;
+    height: 5rem;
+    border-radius: 3.3rem;
+    background-color: #453F86;
+    border: 1px solid #453F86;
+    color: #fff;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 64px 62px -33px rgba(0,0,0,0.48);
+}
+
+
+.btn_pay_btn:hover{
+    background-color: #fff;
+    color: #453F86;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn_pay_btn:active {
+    transform: translate(0px, 4px);
+    outline: none;
+}
+
+.btn_pay_btn:focus {
+    outline: none;
+}
+
+
+@media all and (max-width: 910px){
+    .btn_pay_btn{
+        width: 19rem;
+        height: 4.4rem;
+        font-size: 1.2rem;
+    }
+}
+@media all and (max-width: 590px){
+    .btn_pay_btn{
+        width: 15rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 400px){
+    .btn_pay_btn{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media all and (max-width: 1280px){
+    .pay_outer{
+        height: 1300px;
+    }
+}
+
+@media all and (max-width: 1062px){
+    .pay_outer{
+        height: 1400px;
+    }
+    .pay_btn>button{
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 1055px){
+    .pay_outer{
+        height: 1600px;
+    }
+    .pay_title{
+        text-align: center;
+    }
+}
+
+
+@media all and (max-width: 910px){
+    
+    .pay_title{
+        font-size: 2.5em
+    }
+ 
+}
+
+
+@media all and (max-width: 675px){
+    .pay_outer{
+        height: 2500px;
+    }
+}
+
+@media all and (max-width: 660px){
+    .pay_outer{
+        height: 2500px;
+    }
+}
+
+@media all and (max-width: 590px){
+    .pay_title{
+        font-size: 2em
+    }
+    .pay_outer{
+        height: 2300px;
+    }
+  
+}
+
+@media all and (max-width: 375px){
+    .pay_title{
+        font-size: 1.6em
+    }
+   
+}
+@media all and (max-width: 310px){
+    .pay_title{
+        font-size: 1.3em
+    }
+    .pay_container{
+        margin: 50px;
+    }
+    .btn_pay_btn{
+        margin-left: -30px;
+    }
+}
